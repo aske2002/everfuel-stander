@@ -12,7 +12,7 @@ import dataModel from './models/dataModel'
 function App() {
   const [data, setData] = useState<dataModel | undefined>(undefined)
 
-  //Opdater data hvert minut
+  //Hent ny data en gang i minuttet
   useEffect(() => {
     fetchData()
     const interval = setInterval(fetchData, 60000);
@@ -22,7 +22,9 @@ function App() {
   }, [])
 
   const fetchData = () => {
-    //Api implementation her
+    //Api implementation her:
+
+    //Test data:
     const data: dataModel = {
       contentType: contentTypes.video,
       contentUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
