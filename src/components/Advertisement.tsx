@@ -7,13 +7,12 @@ interface panelData {
 }
 
 function Advertisement({contentUrl, contentType}: panelData) {
-    console.log(contentUrl)
     return (
         <div className="advertisement">
             {(() => {
                 if(contentType == contentTypes.video) {
                     return (
-                        <ReactPlayer className="adVideo" url={contentUrl} controls={false} loop={true} muted={true} playing={true}/>
+                        <video src={contentUrl} muted autoPlay></video>
                     )
                 } else if (contentType == contentTypes.image) {
                     return (

@@ -12,12 +12,6 @@
     overflow: hidden;
   }
 
-  .adVideo {
-    height: auto !important;
-    width: 100% !important;
-    position: absolute;
-  }
-
   .adImage {
     width: 100%;
     height: auto;

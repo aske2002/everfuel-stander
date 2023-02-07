@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './fonts.css'
-import './App.css'
+import './css/App.css'
 import EverfuelPanel from './components/EverfuelPanel'
 import PartnerPanel from './components/PartnerPanel'
 import Advertisement from './components/Advertisement'
@@ -14,7 +14,8 @@ function App() {
 
   //Opdater data hvert minut
   useEffect(() => {
-    const interval = setInterval(fetchData, 10000);
+    fetchData()
+    const interval = setInterval(fetchData, 60000);
     return () => {
       clearInterval(interval);
     };

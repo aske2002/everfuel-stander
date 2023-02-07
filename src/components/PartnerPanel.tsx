@@ -1,5 +1,5 @@
 import '../fonts.css'
-import '../css/EverfuelPanel.css'
+import '../css/FuelPanel.css'
 import partnerPanelDataModel from '../models/partnerPanelDataModel'
 
 function PartnerPanel({price, logo, unit}: partnerPanelDataModel) {

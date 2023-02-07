@@ -1,9 +1,8 @@
 import '../fonts.css'
-import '../css/EverfuelPanel.css'
+import '../css/FuelPanel.css'
 import everfuelPanelDataModel from '../models/everfuelPanelDataModel'
 
 function EverfuelPanel({price, name, unit, perfomance}: everfuelPanelDataModel) {
-    console.log(name)
     return (
         <div className='fuelPanel ownPanel'>
             <div className='detailsWrapper'>
